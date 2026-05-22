@@ -9,8 +9,14 @@
 <body>
   <main class="app">
     <section class="weather-box">
-      <h1>Weather Information App</h1>
-      <p class="subtitle">Search any city to see live weather data.</p>
+      <div class="header">
+        <div>
+          <p class="eyebrow">Live forecast</p>
+          <h1>Weather Information App</h1>
+        </div>
+        <div class="header-icon">&#9728;</div>
+      </div>
+      <p class="subtitle">Search any city to see the latest temperature, wind, humidity, and conditions.</p>
 
       <form id="weatherForm" class="search-form">
         <input
@@ -26,12 +32,16 @@
       <p id="message" class="message">Try: Delhi, Mumbai, London, Tokyo</p>
 
       <section id="weatherResult" class="result hidden">
-        <h2 id="placeName"></h2>
-        <div class="temperature">
-          <span id="temperature"></span>
-          <span class="unit">&deg;C</span>
+        <div class="result-main">
+          <div>
+            <h2 id="placeName"></h2>
+            <p id="condition"></p>
+          </div>
+          <div class="temperature">
+            <span id="temperature"></span>
+            <span class="unit">&deg;C</span>
+          </div>
         </div>
-        <p id="condition"></p>
 
         <div class="details">
           <div>
